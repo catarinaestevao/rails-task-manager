@@ -1,0 +1,17 @@
+<h1>Add a new task</h1>
+<ul style="list-style:none">
+<%= form_with model: @restaurant do |f| %>
+
+  <li>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  </li>
+
+  <li>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  </li>
+<% end %>
+</ul>
+
+<%= link_to "back to list", tasks_path %>
